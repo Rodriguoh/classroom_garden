@@ -38,7 +38,7 @@ h2{
 }
 .button{
     padding: 20px 20px 20px 60px;
-    background-image: url("img/printer.png");
+    background-image: url("img/lightmode/printer.png");
     background-position: 7%;
     text-align: right;
     background-color: black;
@@ -68,18 +68,15 @@ h2{
     border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
     transition: 200ms;
 }
-
 .classroom > ul > li:hover,
 .teachers > ul > li:hover{
     box-shadow: 6px 8px 2px 1px rgba(0, 0, 0);
     margin: 0 5px 5px 0;
 }
-
 .classroom > ul > li > img,
 .teachers > ul > li > img{
     transform: scale(1.4);
 }
-
 .networks_links > li{
     display: inline-block;
     height: 70px;
@@ -99,26 +96,23 @@ h2{
     border-image-source: linear-gradient(to left, transparent, transparent);
     border-image-outset: 2px;
 }
-
 .github:hover,
 .linkedin:hover,
 a[href="https://www.facebook.com/LICENCE.MIW.MULTIMEDIA.INTERNET.WEBMASTER/"]:hover,
 a[href="https://github.com/miw05"]:hover{
     opacity: 0.5;
 }
-
 .github{
-    background: url("img/iconmonstr-github-2.svg") no-repeat;
+    background: url("img/lightmode/iconmonstr-github-2.svg") no-repeat;
     background-size: cover;
 }
 .linkedin{
-    background: url("img/iconmonstr-linkedin-2.svg") no-repeat;
+    background: url("img/lightmode/iconmonstr-linkedin-2.svg") no-repeat;
     background-size: cover;
 }
 .networks_links > li > a:hover{
     text-decoration: underline;
 }
-
 .intro{
     margin-top: 50px;
     margin-right: auto;
@@ -128,12 +122,10 @@ a[href="https://github.com/miw05"]:hover{
 .students{
     margin-top: 40px;
 }
-
 .teaching{
     display: block;
     margin-top: 20px;
 }
-
 .outro > p > a{
     text-decoration: none;
     color: black;
@@ -143,32 +135,27 @@ a[href="https://github.com/miw05"]:hover{
 .outro > p:last-child{
     font-weight: bold;
 }
-
 .miw_contact > ul> li:nth-child(5) > span,
 .miw_contact > ul> li:nth-child(6) > span{
     display: none;
 }
-
 .miw_contact > ul> li:nth-child(5),
 .miw_contact > ul> li:nth-child(6){
     display: inline-block;
     vertical-align: bottom;
 }
-
 .miw_contact a{
     color: #03f4fc;
 }
 .miw_contact h4{
     text-decoration: underline;
 }
-
 a[href="https://www.facebook.com/LICENCE.MIW.MULTIMEDIA.INTERNET.WEBMASTER/"]{
-    background: url("img/iconmonstr-facebook-2.svg") no-repeat;
+    background: url("img/lightmode/iconmonstr-facebook-2.svg") no-repeat;
 }
 a[href="https://github.com/miw05"]{
-    background: url("img/iconmonstr-github-2.svg") no-repeat;
+    background: url("img/lightmode/iconmonstr-github-2.svg") no-repeat;
 }
-
 a[href="https://www.facebook.com/LICENCE.MIW.MULTIMEDIA.INTERNET.WEBMASTER/"],
 a[href="https://github.com/miw05"]{
     display: block;
@@ -185,12 +172,18 @@ footer{
     width: 100%;
 }
 
+/*Tablette*/
+
 @media (min-width: 576px) {
+
     .classroom > ul > li,
     .teachers > ul > li{
         width: 25%;
     }
+
 }
+
+/*Desktop*/
 
 @media (min-width: 992px) {
 
@@ -271,7 +264,6 @@ footer{
     footer {
         display: none;
     }
-
     .intro::after {
         content: "Feuille d'émargement \a Prof:.................... \a Date: .../.../...... ";
         white-space: pre;
@@ -292,7 +284,6 @@ footer{
         border-image-source: linear-gradient(to left, black, black);
         background: none;
     }
-
     .promo-2021 > ul > li {
         display: flex;
         justify-content: space-around;
@@ -303,8 +294,32 @@ footer{
         height: 50px;
         overflow: hidden;
     }
-
     .networks_links > li:first-child a {
         color: black;
     }
+}
+
+
+/*Mon site est en darkmode first, j'adapte donc pour le lightmode*/
+@media (prefers-color-scheme: light) {
+
+    html{
+        background-color: white;
+        color: #2F3136;
+    }
+    .classroom > ul > li,
+    .teachers > ul > li{
+        background-color: #E1E1E2;
+    }
+    .linkedin{
+        background-image: url("img/darkmode/iconmonstr-github-2.svg");
+    }
+    .github{
+        background-image: url("img/darkmode/iconmonstr-facebook-2.svg");
+    }
+    h2,
+    footer{
+        color: white;
+    }
+
 }
