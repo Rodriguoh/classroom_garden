@@ -283,13 +283,15 @@ footer{
     .linkedin{
         border-image-source: linear-gradient(to left, black, black);
     }
-
     .promo-2021 > ul > li{
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
         border-image-source: linear-gradient(to left, black, black);
         border-width: 1px;
         width: 25%;
+        height: 50px;
+        overflow: hidden;
     }
     .networks_links > li:first-child a{
         color: black;
