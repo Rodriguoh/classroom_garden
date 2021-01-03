@@ -1,0 +1,297 @@
+html{
+    overflow: auto;
+    background-color: #2F3136;
+    color: #DCDDDE;
+}
+body{
+    margin: 0;
+    font-family: Arial;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4{
+    font-weight: bolder;
+}
+h2{
+    padding: 30px 0 30px 0;
+    width: 100%;
+    margin: 0;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.page-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.tools,
+.sidebar,
+.intro,
+.teachers > h2{
+    width: 100%;
+}
+.button{
+    padding: 20px 20px 20px 60px;
+    background-image: url("img/printer.png");
+    background-position: 7%;
+    text-align: right;
+    background-color: black;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    margin: 30px auto;
+}
+.classroom > ul,
+.teachers > ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.classroom > ul > li,
+.teachers > ul > li {
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #202225;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    transition: 200ms;
+}
+
+.classroom > ul > li:hover,
+.teachers > ul > li:hover{
+    box-shadow: 6px 8px 2px 1px rgba(0, 0, 0);
+    margin: 0 5px 5px 0;
+}
+
+.classroom > ul > li > img,
+.teachers > ul > li > img{
+    transform: scale(1.4);
+}
+
+.networks_links > li{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+}
+.github,
+.linkedin{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 0;
+    height: 100%;
+    transition: 200ms;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, transparent, transparent);
+    border-image-outset: 2px;
+}
+
+.github:hover,
+.linkedin:hover,
+a[href="https://www.facebook.com/LICENCE.MIW.MULTIMEDIA.INTERNET.WEBMASTER/"]:hover,
+a[href="https://github.com/miw05"]:hover{
+    opacity: 0.5;
+}
+
+.github{
+    background: url("img/iconmonstr-github-2.svg") no-repeat;
+    background-size: cover;
+}
+.linkedin{
+    background: url("img/iconmonstr-linkedin-2.svg") no-repeat;
+    background-size: cover;
+}
+.networks_links > li > a:hover{
+    text-decoration: underline;
+}
+
+.intro{
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+}
+.students{
+    margin-top: 40px;
+}
+
+.teaching{
+    display: block;
+    margin-top: 20px;
+}
+
+.outro > p > a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+
+}
+.outro > p:last-child{
+    font-weight: bold;
+}
+
+.miw_contact > ul> li:nth-child(5) > span,
+.miw_contact > ul> li:nth-child(6) > span{
+    display: none;
+}
+
+.miw_contact > ul> li:nth-child(5),
+.miw_contact > ul> li:nth-child(6){
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.miw_contact a{
+    color: #03f4fc;
+}
+.miw_contact h4{
+    text-decoration: underline;
+}
+
+a[href="https://www.facebook.com/LICENCE.MIW.MULTIMEDIA.INTERNET.WEBMASTER/"]{
+    background: url("img/iconmonstr-facebook-2.svg") no-repeat;
+}
+a[href="https://github.com/miw05"]{
+    background: url("img/iconmonstr-github-2.svg") no-repeat;
+}
+
+a[href="https://www.facebook.com/LICENCE.MIW.MULTIMEDIA.INTERNET.WEBMASTER/"],
+a[href="https://github.com/miw05"]{
+    display: block;
+    font-size: 0;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    margin-top: 20px;
+    transition: 200ms;
+}
+footer{
+    background-color: black;
+    padding: 30px;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .classroom > ul > li,
+    .teachers > ul > li{
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .intro{
+        order: 0;
+        margin-top: 0;
+    }
+    .tools{
+        order: 1;
+    }
+    .page-wrapper{
+        justify-content: space-around;
+    }
+    .students{
+        margin-top: 60px;
+        margin-bottom: 115px;
+        width: 55%;
+        order: 4;
+        height: 650px;
+        overflow: auto;
+    }
+    .classroom > ul > li{
+        margin: 8px;
+        width: 28%;
+    }
+    .teachers > ul > li{
+        margin: 8px;
+        width: 30%;
+    }
+    .students::-webkit-scrollbar{
+        background: none;
+    }
+    .students::-webkit-scrollbar-thumb{
+        background-color: #FD4B29;
+        border-radius: 20px;
+    }
+    .students::-webkit-scrollbar-track-piece:start {
+        margin-top: 150px;
+    }
+    .sidebar{
+        margin-top: 60px;
+        margin-bottom: 115px;
+        width: 40%;
+        order: 3;
+        height: 650px;
+        overflow: auto;
+    }
+    .sidebar::-webkit-scrollbar{
+        background: none;
+    }
+    .sidebar::-webkit-scrollbar-thumb{
+        background-color: #FD4B29;
+        border-radius: 20px;
+    }
+    .sidebar::-webkit-scrollbar-track-piece:start {
+        margin-top: 150px;
+    }
+    footer{
+        order: 5;
+    }
+    .teachers > ul > li{
+        width: 43%;
+    }
+    .teachers > ul{
+        justify-content: right;
+    }
+}
+
+@media print {
+    .promo-2013,
+    .promo-2018,
+    .promo-2020,
+    .sidebar,
+    .tools,
+    .promo-2021 > ul > li img,
+    .networks_links > li:nth-child(even),
+    footer{
+        display: none;
+    }
+
+    .intro:after{
+        content: "Feuille d'émargement <br> Prof: <br> Date: ";
+    }
+    .networks_links > li {
+        margin-top: 20px;
+        height: 15px;
+        width: 15px;
+    }
+    .github,
+    .linkedin{
+        border-image-source: linear-gradient(to left, black, black);
+    }
+
+    .promo-2021 > ul > li{
+        display: flex;
+        justify-content: space-around;
+        border-image-source: linear-gradient(to left, black, black);
+        border-width: 1px;
+        width: 25%;
+    }
+    .networks_links > li:first-child a{
+        color: black;
+    }
+}
