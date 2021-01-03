@@ -260,6 +260,7 @@ footer{
 }
 
 @media print {
+
     .promo-2013,
     .promo-2018,
     .promo-2020,
@@ -267,23 +268,31 @@ footer{
     .tools,
     .promo-2021 > ul > li img,
     .networks_links > li:nth-child(even),
-    footer{
+    footer {
         display: none;
     }
 
-    .intro:after{
-        content: "Feuille d'émargement <br> Prof: <br> Date: ";
+    .classroom {
+        margin-top: -100px;
     }
+
+    .intro::after {
+        content: "Feuille d'émargement \a Prof:.................... \a Date: .../.../...... ";
+        white-space: pre;
+    }
+
     .networks_links > li {
         margin-top: 20px;
         height: 15px;
         width: 15px;
     }
+
     .github,
-    .linkedin{
+    .linkedin {
         border-image-source: linear-gradient(to left, black, black);
     }
-    .promo-2021 > ul > li{
+
+    .promo-2021 > ul > li {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
@@ -293,7 +302,8 @@ footer{
         height: 50px;
         overflow: hidden;
     }
-    .networks_links > li:first-child a{
+
+    .networks_links > li:first-child a {
         color: black;
     }
 }
