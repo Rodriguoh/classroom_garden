@@ -272,24 +272,25 @@ footer{
         display: none;
     }
 
-    .classroom {
-        margin-top: -100px;
-    }
-
     .intro::after {
         content: "Feuille d'émargement \a Prof:.................... \a Date: .../.../...... ";
         white-space: pre;
     }
-
+    .students{
+        margin-top: 0;
+    }
     .networks_links > li {
         margin-top: 20px;
         height: 15px;
         width: 15px;
     }
-
+    .classroom > ul > li{
+        padding-top: 5px;
+    }
     .github,
     .linkedin {
         border-image-source: linear-gradient(to left, black, black);
+        background: none;
     }
 
     .promo-2021 > ul > li {
